@@ -31,5 +31,4 @@ No, ~~it doesn't exist~~
 ![](https://cdn.discordapp.com/attachments/575324124201615370/832297842642649088/chrome_DheSJCDgPt.png)
 
 ## Frog
-![frog](https://user-images.githubusercontent.com/63729559/114924819-ab075200-9e2e-11eb-869d-14da6602f968.gif)
-
+![frogtest](https://user-images.githubusercontent.com/63729559/114926986-44376800-9e31-11eb-80bb-d6e00b6b606a.png)
