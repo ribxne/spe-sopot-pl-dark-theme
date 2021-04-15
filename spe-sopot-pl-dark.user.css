@@ -360,7 +360,7 @@
     ::-webkit-scrollbar-thumb {
         background: var(--primary);
     }
-	.table {
-		color: var(--text-primary);
-	}
+    .table {
+	color: var(--text-primary);
+    }
 }
