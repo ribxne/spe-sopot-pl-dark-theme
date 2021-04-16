@@ -1,0 +1,504 @@
+/* ==UserStyle==
+@name           spe.sopot.pl dark
+@namespace      github.com/openstyles/stylus
+@version        1.0.3
+@description    dark theme for spe.sopot.pl
+@author         ribxne
+@homepageURL    https://github.com/ribxne/spe-sopot-pl-dark-theme
+@updateURL      https://github.com/ribxne/spe-sopot-pl-dark-theme/raw/master/spe-sopot-pl-dark.user.css
+@license        MIT
+==/UserStyle== */
+@-moz-document domain("spe.sopot.pl") {
+
+    * {
+        box-shadow: unset !important;
+        outline: unset !important;
+    }
+
+    :root {
+        --primary: #1b1b1b;
+        --primary-light-but-darker-than-light: #1f1f1f;
+        /*^ XDD???*/
+        --primary-light: #424242;
+        --primary-dark: #121212;
+        --secondary: #f06292;
+        --secondary-dark: #ba2d65;
+        --secondary-light: #ff94c2;
+        --text-primary: #ffffff;
+        --black: #000000;
+        /*--text-secondary: #000000;*/
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        background-color: var(--secondary) !important;
+        color: var(--text-primary);
+        border-radius: 10px;
+        display: block;
+        border: unset;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        background-color: var(--secondary-dark) !important;
+        color: var(--primary-text);
+    }
+
+    .card {
+        background-color: var(--primary);
+        border-radius: 10px;
+        border: unset;
+    }
+
+    body {
+        background-image: unset !important;
+        background-color: #121212;
+        color: var(--text-primary);
+    }
+
+    #region-main {
+        background-color: var(--primary);
+        border-radius: 10px;
+        border: unset;
+    }
+
+    a,
+    .btn-link {
+        color: var(--secondary);
+        text-decoration: none;
+    }
+
+    a {
+        background: unset !important;
+    }
+
+    a:hover,
+    .btn-link:hover {
+        color: var(--secondary-dark);
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .bg-white {
+        background-color: var(--primary) !important;
+    }
+
+    .form-control {
+        background-color: var(--primary-dark);
+        border-radius: 10px;
+        border: unset;
+        color: var(--primary-light);
+    }
+
+    .form-control:focus {
+        background-color: var(--primary-dark);
+        color: var(--primary-light);
+        /*border-color: var(--secondary) !important;
+        border: solid 1px;*/
+    }
+
+    img[title="Logo Sopot"] {
+        content: url("https://cdn.discordapp.com/attachments/548217110791323661/832190688551501864/sopot.png") !important;
+    }
+
+    img[alt="logo CKU Sopot"] {
+        content: url("https://cdn.discordapp.com/attachments/548217110791323661/831865782224420914/ckusopot.png") !important;
+    }
+
+    strong {
+        color: var(--secondary);
+    }
+
+    .border {
+        border: unset !important;
+    }
+
+    .forumpost {
+        border-radius: 10px;
+        background-color: var(--primary-light-but-darker-than-light);
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-brand {
+        color: var(--primary-text) !important;
+    }
+
+    .navbar-light:hover .navbar-nav:hover .nav-link:hover,
+    .navbar-light:hover .navbar-brand:hover {
+        color: var(--secondary) !important;
+    }
+
+    .navbar-light .navbar-nav .show>.nav-link,
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: var(--secondary) !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link:focus {
+        color: var(--text-primary);
+    }
+
+    .bg-gray {
+        background-color: var(--primary) !important;
+    }
+
+    .border-bottom,
+    .dropdown-divider {
+        border-color: var(--primary-light) !important;
+    }
+
+    img[alt="No upcoming activities due"],
+    img[alt="Brak aktywności z terminem wykonania"],
+    .userpicture.defaultuserpic {
+        filter: invert(1);
+    }
+
+    .fa-navicon:before,
+    .fa-reorder:before,
+    .fa-bars:before {
+        color: var(--text-primary);
+    }
+
+    .btn-light,
+    .btn-light:hover {
+        border: unset !important;
+    }
+
+    #nav-drawer {
+        background-color: var(--primary) !important;
+    }
+
+    .list-group-item.active {
+        border-radius: 10px;
+        border-color: transparent;
+        background-color: var(--primary);
+    }
+
+    .list-group-item.active:hover {
+        border-color: transparent;
+        background-color: var(--primary-dark) !important;
+    }
+
+    .list-group-item-action:hover,
+    .list-group-item-action:focus {
+        background-color: var(--primary-dark) !important;
+    }
+
+    .dropdown-menu {
+        background-color: var(--primary) !important;
+    }
+
+    .dropdown-item {
+        color: var(--text-primary) !important;
+    }
+
+    .dropdown-item:hover {
+        background-color: var(--primary-dark) !important;
+    }
+
+    #page-footer {
+        background-color: var(--primary) !important;
+    }
+
+    .fa-question-circle:before {
+        color: var(--secondary);
+    }
+
+    .alert-danger {
+        color: var(--text-primary);
+        background-color: var(--secondary);
+        border-radius: 10px;
+    }
+
+    #page-content,
+    #page-header {
+        background-color: var(--primary-dark) !important;
+    }
+
+    .block .block-cards .course-info-container {
+        background-color: var(--primary-light-but-darker-than-light) !important;
+        border-radius: 10px;
+    }
+
+    .list-group-item {
+        background-color: var(--primary);
+        border-radius: 10px;
+    }
+
+    .list-group-item:hover {
+        background-color: var(--primary-dark);
+    }
+
+    .calendar_event_course {
+        background-color: var(--primary-light);
+        border-radius: 5px;
+    }
+
+    .btn {
+        background-color: var(--primary-dark);
+        border-color: transparent;
+        border-radius: 10px;
+        color: var(--text-primary);
+    }
+
+    .maincalendar .calendarmonth td,
+    .maincalendar .calendarmonth th {
+        border: solid;
+        border-color: var(--primary-light);
+    }
+
+    .custom-select {
+        background-color: var(--primary-dark);
+        border-radius: 10px;
+        border-color: transparent;
+        color: var(--text-primary);
+    }
+
+    .custom-select:hover {
+        background-color: var(--primary-light-but-darker-than-light);
+    }
+
+    .dropdown-item.active {
+        background-color: var(--secondary) !important;
+    }
+
+    .dropdown-menu.show {
+        border-radius: 10px;
+    }
+
+    .btn-outline-secondary:not(:disabled):not(.disabled):active,
+    .btn-outline-secondary:not(:disabled):not(.disabled).active,
+    .show>.btn-outline-secondary.dropdown-toggle {
+        background-color: var(--primary-light-but-darker-than-light);
+        outline: none;
+    }
+
+    .btn-outline-secondary:hover {
+        background-color: var(--primary-light-but-darker-than-light);
+    }
+
+    a.bg-gray:hover,
+    button.bg-gray:hover,
+    a.bg-gray:focus,
+    button.bg-gray:focus {
+        background-color: var(--primary-dark) !important;
+    }
+
+    .box.card-header.clearfix.calendar_event_course {
+        background-color: var(--primary-light-but-darker-than-light);
+    }
+
+    .list-group-item-action,
+    .list-group-item-action:hover,
+    .list-group-item-action:focus {
+        color: var(--text-primary);
+    }
+
+    .course-content ul li.section.main {
+        border-color: var(--primary-light);
+    }
+
+    .generaltable,
+    .generaltable:hover {
+        color: var(--text-primary);
+    }
+
+    .generaltable thead th {
+        background-color: var(--primary-light-but-darker-than-light);
+        border-radius: 10px 10px 0px 0px;
+        border-color: transparent;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: var(--primary);
+    }
+
+    .btn-outline-secondary:not(:disabled):not(.disabled):active,
+    .btn-outline-secondary:not(:disabled):not(.disabled).active,
+    .show>.btn-outline-secondary.dropdown-toggle,
+    .btn-outline-secondary:hover {
+        border-color: transparent;
+    }
+
+    .text-muted {
+        color: var(--primary-light) !important;
+    }
+
+    .mform fieldset {
+        border-color: var(--primary-light)
+    }
+
+    .fm-empty-container {
+        border-color: transparent !important;
+        border-radius: 10px;
+        background-color: var(--primary-dark);
+        transition: 0.3s;
+    }
+
+    .fm-empty-container:hover {
+        background-color: var(--black);
+        opacity: 0.5;
+    }
+
+
+
+    .content-message-container,
+    .form-control.bg-light {
+        background-color: var(--primary-dark) !important;
+        color: var(--text-primary) !important;
+    }
+
+    .border-top {
+        border-color: var(--primary-light) !important;
+    }
+
+    .message-app {
+        background-color: var(--primary);
+    }
+
+    .input-group-text.pr-2.bg-white {
+        background-color: var(--primary-dark) !important;
+    }
+
+    .input-group-text {
+        border-color: transparent;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        background: var(--primary-dark);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary);
+    }
+
+    .table {
+        color: var(--text-primary);
+    }
+
+    .que .info {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .que .formulation {
+        background-color: var(--primary-light-but-darker-than-light);
+        border-radius: 10px;
+        color: var(--secondary);
+    }
+
+    .moodle-dialogue-base .moodle-dialogue-wrap {
+        background-color: var(--primary);
+        color: var(--primary-text);
+        border-color: transparent !important;
+        border-radius: 10px;
+    }
+
+    .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd h1 {
+        color: var(--text-primary);
+    }
+
+    .moodle-dialogue-base .closebutton::after {
+        color: var(--text-primary);
+    }
+
+    .popover,
+    .popover-header {
+        background-color: var(--primary-dark);
+        color: var(--text-primary);
+    }
+
+    .popover-header {
+        border-color: var(--primary);
+    }
+
+    .popover {
+        border-radius: 10px;
+    }
+
+    .popover-body {
+        color: var(--text-primary);
+    }
+
+    .bs-popover-top>.arrow::after,
+    .bs-popover-auto[x-placement^="top"]>.arrow::after {
+        border-top-color: var(--primary-dark);
+    }
+
+    .overlay-icon-container {
+        background-color: var(--primary-dark);
+        opacity: 0.5;
+        border-radius: 10px;
+    }
+
+    .fa-circle-o-notch:before {
+        filter: invert(0.5);
+    }
+
+    .dndupload-arrow {
+        background: url("https://cdn.discordapp.com/attachments/548217110791323661/832551168936902666/file_upload_white_48dp.svg") center no-repeat;
+    }
+
+    .file-picker .fp-content {
+        background-color: var(--primary);
+    }
+
+    .file-picker .fp-navbar {
+        background-color: var(--primary-light-but-darker-than-light);
+        border-color: transparent;
+    }
+
+    h3,
+    .h3 {
+        color: var(--text-primary);
+    }
+
+    .moodle-dialogue-base .moodle-dialogue-lightbox {
+        background-color: var(--primary-dark);
+        opacity: 0.7;
+    }
+
+    .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd {
+        border-color: var(--primary-light);
+    }
+
+
+    .modal-content {
+        border-radius: 10px;
+        background-color: var(--primary);
+    }
+
+    .close {
+        color: var(--text-primary);
+        opacity: 1;
+        text-shadow: unset;
+    }
+
+    .close:hover {
+        color: var(--secondary);
+        text-shadow: unset;
+        opacity: 1;
+    }
+
+    .modal-header,
+    .modal-footer {
+        border-color: var(--primary-light);
+    }
+
+    .fa-th:before {
+        color: var(--text-primary);
+    }
+
+    .fp-pathbar .fp-path-folder {
+        background: url("https://cdn.discordapp.com/attachments/548217110791323661/832597819218329600/folder_white_24dp.svg") left no-repeat;
+    }
+
+    .bg-pulse-grey {
+        -webkit-animation: unset;
+        animation: unset;
+    }
+}
