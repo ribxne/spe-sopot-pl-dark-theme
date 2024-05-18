@@ -97,14 +97,6 @@
         border: solid 1px;*/
     }
 
-    img[title="Logo Sopot"] {
-        content: url("https://cdn.discordapp.com/attachments/548217110791323661/832190688551501864/sopot.png") !important;
-    }
-
-    img[alt="logo CKU Sopot"] {
-        content: url("https://cdn.discordapp.com/attachments/548217110791323661/831865782224420914/ckusopot.png") !important;
-    }
-
     strong {
         color: var(--secondary);
     }
